@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
-import BackgroundImage from '../../../public/HomePage/nandhu-kumar-TwYX-EQRXQQ-unsplash 1.png';
+import BackgroundImage from '/HomePage/nandhu-kumar-TwYX-EQRXQQ-unsplash 1.png';
 import {config} from "../../config/config";
 
 export default function AuthPage() {

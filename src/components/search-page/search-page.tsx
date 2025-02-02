@@ -3,7 +3,7 @@ import axios from 'axios'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Search, Tag } from 'lucide-react'
-import React = require('react')
+import React from 'react'
 import {config} from '../../config/config'
 
 const tags = ['Travel', 'Food', 'Lifestyle', 'Photography', 'Adventure', 'Technology', 'Health', 'Fashion', 'Finance', 'Education', 'Beach']

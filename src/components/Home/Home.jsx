@@ -1,26 +1,26 @@
 import React from 'react';
 import{ useState} from 'react'
 import axios from 'axios';
-import backgroundImage from '../../../public/HomePage/Green.png';
-import vector from '../../../public/HomePage/Vector.png';
-import Design from '../../../public/Homepage/Group 3.png';
-import Gridphoto1 from '../../../public/HomePage/Rectangle 21.png';
-import Gridphoto2 from '../../../public/HomePage/Rectangle 22.png';
-import Gridphoto3 from '../../../public/HomePage/Rectangle 23.png';
-import Gridphoto4 from '../../../public/HomePage/Rectangle 24.png';
-import Gridphoto5 from '../../../public/HomePage/Rectangle 25.png';
-import Gridphoto6 from '../../../public/HomePage/Rectangle 26.png';
+import backgroundImage from '/HomePage/Green.png';
+import vector from '/HomePage/Vector.png';
+import Design from '/HomePage/Rectangle 21.png';
+import Gridphoto1 from '/HomePage/Rectangle 21.png';
+import Gridphoto2 from '/HomePage/Rectangle 22.png';
+import Gridphoto3 from '/HomePage/Rectangle 23.png';
+import Gridphoto4 from '/HomePage/Rectangle 24.png';
+import Gridphoto5 from '/HomePage/Rectangle 25.png';
+import Gridphoto6 from '/HomePage/Rectangle 26.png';
 import { FaCompass, FaChartLine, FaFlag } from 'react-icons/fa';
 import ImageGridItem from '../GridComponents/ImageGridItem';
-import Group from '../../../public/HomePage/Group.png';
-import tilt1 from '../../../public/HomePage/Union.png';
-import tilt2 from '../../../public/HomePage/Frame 9.png';
-import tilt3 from '../../../public/HomePage/sudhin-santhosh-uNaaNnhzqns-unsplash 1.png';
-import design from '../../../public/HomePage/GroupDesign.png';
-import Footer from '../../../public/HomePage/Frame 16.png';
-import Flower from '../../../public/HomePage/GroupFlower.png';
-import submit from '../../../public/HomePage/gis_compass-rose.png'
-import Plane  from '../../../public/HomePage/VectorPlane.png'
+import Group from '/HomePage/Group.png';
+import tilt1 from '/HomePage/Union.png';
+import tilt2 from '/HomePage/Frame 9.png';
+import tilt3 from '/HomePage/sudhin-santhosh-uNaaNnhzqns-unsplash 1.png';
+import design from '/HomePage/GroupDesign.png';
+import Footer from '/HomePage/Frame 16.png';
+import Flower from '/HomePage/GroupFlower.png';
+import submit from '/HomePage/gis_compass-rose.png'
+import Plane  from '/HomePage/VectorPlane.png'
 import { useNavigate } from 'react-router-dom';
 const allowedCities = ['Mumbai', 'Pune', 'Vadora', 'Mathura', 'Surat'];
 export const Home = () => {
@@ -100,7 +100,7 @@ export const Home = () => {
             <div className=" absolute top-[360px] left-[120px] bg-opacity-50 p-4 rounded flex flex-col">
                <span className='text-white font-extrabold text-4xl'>Discover the World:</span>
                <span className='text-white font-extrabold text-4xl'>Stories from Global Explorers!</span>
-               <span className='text-white '>Delve into captivating narratives and remarkable journeys curated by fearless global </span><span>explorers, offering a unique perspective on the world's wonders and wanderlust.</span>
+               <span className='text-white '>Delve into captivating narratives and remarkable journeys curated by fearless global </span><span>explorers, offering a unique perspective on the world&apos;s wonders and wanderlust.</span>
             </div>
             <div
               className="absolute top-[732px] w-full h-[402px] bg-cover bg-center flex items-center justify-center text-white"
@@ -186,7 +186,7 @@ export const Home = () => {
         <div className="absolute top-[2236px] flex flex-row space-x-32">
           <div className="ml-8 bg-[#F5ECE0] w-[600px] h-[450px] rounded">
             <p className="p-4 text-black text-justify">
-              India is a land of incredible diversity, not only in its geography but also in its rich cultural heritage and secular values. From the towering Himalayan peaks in the north, which include popular trekking and spiritual destinations like Leh-Ladakh and the hill stations of Shimla and Manali, to the lush, tropical landscapes of Kerala in the south, famed for its tranquil backwaters, traditional Kathakali dance, and tea plantations, India offers a variety of landforms to explore. The Thar Desert in the west provides a stark contrast with its vast, arid expanses and vibrant cities like Jaisalmer and Jaipur, known for their grand forts, palaces, and colorful festivals. In the east, the Sundarbans mangrove forests and the serene beaches of the Andaman and Nicobar Islands offer unique experiences intertwined with local tribal cultures. Each region has its own distinct languages, cuisines, and customs, reflecting a tapestry of cultural diversity. India's secularism ensures that people of different religions live in harmony, celebrating a multitude of festivals and traditions. With its stunning coastlines, diverse ecosystems, and historical landmarks, India is a paradise for travelers seeking both adventure and a deep immersion into its cultural richness and secular spirit.
+              India is a land of incredible diversity, not only in its geography but also in its rich cultural heritage and secular values. From the towering Himalayan peaks in the north, which include popular trekking and spiritual destinations like Leh-Ladakh and the hill stations of Shimla and Manali, to the lush, tropical landscapes of Kerala in the south, famed for its tranquil backwaters, traditional Kathakali dance, and tea plantations, India offers a variety of landforms to explore. The Thar Desert in the west provides a stark contrast with its vast, arid expanses and vibrant cities like Jaisalmer and Jaipur, known for their grand forts, palaces, and colorful festivals. In the east, the Sundarbans mangrove forests and the serene beaches of the Andaman and Nicobar Islands offer unique experiences intertwined with local tribal cultures. Each region has its own distinct languages, cuisines, and customs, reflecting a tapestry of cultural diversity. India&apos;s secularism ensures that people of different religions live in harmony, celebrating a multitude of festivals and traditions. With its stunning coastlines, diverse ecosystems, and historical landmarks, India is a paradise for travelers seeking both adventure and a deep immersion into its cultural richness and secular spirit.
             </p>
           </div>
           <div>

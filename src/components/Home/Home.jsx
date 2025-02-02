@@ -1,9 +1,9 @@
-import React from 'react';
+
 import{ useState} from 'react'
 import axios from 'axios';
 import backgroundImage from '/HomePage/Green.png';
 import vector from '/HomePage/Vector.png';
-import Design from '/public/Homepage/TajMahal.png';
+import Design from '/TajMahal.png';
 import Gridphoto1 from '/HomePage/Rectangle 21.png';
 import Gridphoto2 from '/HomePage/Rectangle 22.png';
 import Gridphoto3 from '/HomePage/Rectangle 23.png';

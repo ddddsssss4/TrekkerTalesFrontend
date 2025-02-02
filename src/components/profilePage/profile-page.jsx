@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Link } from 'react-router-dom';
-import config from '../../config/config';
+import {config} from '../../config/config';
 
 // Modal Component
 const Modal = ({ isOpen, onClose, onSubmit }) => {

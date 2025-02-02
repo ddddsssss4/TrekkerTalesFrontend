@@ -1,11 +1,6 @@
+
 {
-  "routes": [
-    { "src": "/(.*)", "dest": "/index.html", "status": 200 }
-  ],
-  "headers": [
-    {
-      "source": "/static/js/(.*).js",
-      "headers": [{ "key": "Content-Type", "value": "application/javascript" }]
-    }
-  ]
+    "rewrites": [
+        {"source": "/(.*)", "destination": "/"}
+    ]
 }

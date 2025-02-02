@@ -4,7 +4,7 @@ import CreateBlog from './components/create-blog/create-blog'
 import AuthPage from './components/login/login-signup'
 import SearchPage from './components/search-page/search-page'
 import {Home} from './components/Home/Home'
-import AudioRecorder from './components/test/test'
+
 export default function App() {
   return (
     <BrowserRouter>
@@ -14,7 +14,7 @@ export default function App() {
         <Route path="/create-blog" element={<CreateBlog />}/>     
         <Route path="/login-signup" element={<AuthPage />} />
         <Route path="/search-page" element={<SearchPage />} />
-        <Route path="/test" element={<AudioRecorder />} />
+       
         </Routes>
     </BrowserRouter>
   )

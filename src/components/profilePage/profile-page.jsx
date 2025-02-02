@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Link } from 'react-router-dom';
+import config from '../../config/config';
 
 // Modal Component
 const Modal = ({ isOpen, onClose, onSubmit }) => {
@@ -63,7 +64,7 @@ export default function ProfilePage() {
     const fetchUserData = async () => {
       try {
         const userId = localStorage.getItem("userId");
-        const response = await axios.get(`http://localhost:3000/api/user-information/${userId}`);
+        const response = await axios.get(`${config.BACKEND_URL}/api/user-information/${userId}`);
         const user = response.data.user;
         setUsername(user.username);
         setDescription(user.description);
@@ -75,7 +76,7 @@ export default function ProfilePage() {
     const fetchBlogPosts = async () => {
       try {
         const userId = localStorage.getItem("userId");
-        const response = await axios.get(`http://localhost:3000/api/blogs/user/${userId}`);
+        const response = await axios.get(`${config.BACKEND_URL}/api/blogs/user/${userId}`);
         console.log(response.data.simplifiedBlogs)
         setBlogPosts(response.data.simplifiedBlogs);
       } catch (error) {
@@ -103,7 +104,7 @@ export default function ProfilePage() {
       setLoading(true);
 
       try {
-        const response = await axios.post('http://localhost:3000/api/user/profile-picture', formData, {
+        const response = await axios.post(`${config.BACKEND_URL}/api/user/profile-pictur`, formData, {
           headers: {
             'Content-Type': 'multipart/form-data',
           },
@@ -126,7 +127,7 @@ export default function ProfilePage() {
   const handleDescriptionSubmit = async (newDescription) => {
     const userId = localStorage.getItem('userId');
     try {
-      await axios.post(`http://localhost:3000/api/update-description/${userId}`, {
+      await axios.post(`${config.BACKEND_URL}/api/update-description/${userId}`, {
         description: newDescription,
       });
       setDescription(newDescription);

@@ -3,6 +3,8 @@ import axios from 'axios'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Search, Tag } from 'lucide-react'
+import React = require('react')
+import {config} from '../../config/config'
 
 const tags = ['Travel', 'Food', 'Lifestyle', 'Photography', 'Adventure', 'Technology', 'Health', 'Fashion', 'Finance', 'Education', 'Beach']
 
@@ -13,7 +15,7 @@ export default function SearchPage() {
 
   const handleSearch = async () => {
     try {
-      const response = await axios.post('http://localhost:3000/api/blog/search', { searchTerm, tags: selectedTags }, {
+      const response = await axios.post(`${config.BACKEND_URL}/api/blog/search`, { searchTerm, tags: selectedTags }, {
         headers: { 'Content-Type': 'application/json' }
       })
       setPosts(response.data.globalBlogs)

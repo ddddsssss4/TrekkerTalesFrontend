@@ -62,6 +62,7 @@ export const Home = () => {
       console.error('Error submitting search:', error);
     }
   };
+  console.log()
   return (
     <>
       <div className="bg-[#f5f5dc]">

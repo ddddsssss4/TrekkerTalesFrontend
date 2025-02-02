@@ -7,6 +7,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import BackgroundImage from '../../../public/HomePage/Property 1=slider 2.png';
+import {config} from "../../config/config";
 
 const predefinedTags = [
   'Travel',
@@ -46,7 +47,7 @@ export default function CreateBlog() {
     const userId = localStorage.getItem('userId');
     console.log(userId);
     try {
-      const response = await axios.post('http://localhost:3000/api/blogs', {
+      const response = await axios.post(`${config.BACKEND_URL}/api/blogs`, {
         title,
         description,
         place,

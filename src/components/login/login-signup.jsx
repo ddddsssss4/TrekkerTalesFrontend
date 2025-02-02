@@ -6,6 +6,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import BackgroundImage from '../../../public/HomePage/nandhu-kumar-TwYX-EQRXQQ-unsplash 1.png';
+import {config} from "../../config/config";
 
 export default function AuthPage() {
   const [isLogin, setIsLogin] = useState(true);
@@ -48,7 +49,7 @@ export default function AuthPage() {
     try {
       if (isLogin) {
         // Login request
-        const response = await axios.post('http://localhost:3000/api/signin', { email, password }, {
+        const response = await axios.post(`${config.BACKEND_URL}/api/signin`, { email, password }, {
           headers: { 'Content-Type': 'application/json' },
           withCredentials: true
         });
@@ -61,7 +62,7 @@ export default function AuthPage() {
         }, 3000);
       } else {
         // Sign-up request
-        const response = await axios.post('http://localhost:3000/api/signup', { username, email, password, name }, {
+        const response = await axios.post(`${config.BACKEND_URL}/api/signup`, { username, email, password, name }, {
           headers: { 'Content-Type': 'application/json' },
           withCredentials: true
         });
